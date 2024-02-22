@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/6c500d8303.js" crossorigin="anonymous"></script>
+    <script src="javascript1.js"></script>
+    <style>
+        .error {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<!-- <script>
+    function errorMessage() {
+        var error = document.getElementById("error")
+        if (isNaN(document.getElementById("contactno").value))
+        {
+             
+            // Changing content and color of content
+            error.textContent = "Please enter a valid number"
+            error.style.color = "red"
+        } else {
+            error.textContent = ""
+        }
+    }
+</script> -->
+
+<body>
+   
+
+    <div class="main">
+        <div class="navcontainer">
+            <div class="btnC">
+                <a class="btn home" href="">Home</a>
+                <a class="btn projects" href="#cource">Projects</a>
+                <a class="btn aboutMe" href="#aboutme">AboutMe</a>
+                <a class="btn contact-Me" href="#contactme">ContactMe</a>
+            </div>
+            <div class="icons">
+                <div class="icons fb"><i class="fa-brands fa-square-facebook"></i></div>
+                <div class="icons insta"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icons twitter"><i class="fa-brands fa-twitter"></i></div>
+                <div class="icons linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+        </div>
+        <h1 class="typewrite" data-period="2000"
+            data-type='[ "Hello,There...", "I Love 2 Design.", "I Love 2 Develop.","I Love 2 Learn"]'>
+        </h1>
+        <div class="second">
+            <div class="intro">
+                <p>
+                <h3>Hi, I'm Deepak Rajput</h3>
+                I am a Full Stack Developer (MERN & JAVA) and I'm passionate about improving
+                the lives of other through design and am constantaly looking to learn new Things
+                Everyday .
+
+                </p>
+            </div>
+
+            <div class="imgpng">
+                <img src="images/PNG.png" alt="pngImage">
+            </div>
+        </div>
+        <div class="down">
+            <div class="call-to-action DR"><a href="">Download Resume</a></div>
+            <div class="call-to-action DR i2"><a href="">HiredMe</a></div>
+        </div>
+
+
+
+        <div class="cource" id="cource">
+            <article class="skills">
+                <h1>My Skills</h1>
+                <h2>Front End Technologies</h2>
+                <ul>
+                    <img src="images/html.png" alt="">
+                    <img src="images/css.png" alt="">
+                    <img src="images/javascript.png" alt="">
+                    <img src="images/react.png" alt="">
+                    <img src="images/flutter.svg" alt="">
+                </ul>
+                <h2>Backend Technologies </h2>
+                <ul>
+                    <img src="images/nodejs.png" alt="">
+                    <img src="images/mysql.svg" alt="">
+                    <img src="images/mongodb.svg" alt="">
+                    <img src="images/firebase.png" alt="">
+                </ul>
+                <h2>Programming Languages</h2>
+                <ul>
+                    <img src="images/c.png" alt="">
+                    <img src="images/java.png" alt="">
+                    <img src="images/python.png" alt="">
+                    <img src="images/php.png" alt="">
+                    <img src="images/dart.svg" alt="">
+                </ul>
+                </ul>
+                <div class="tt">
+                    <h2>Tools I Use</h2>
+                    <img src="images/vscode.svg" alt="">
+                    <img src="images/git.png" alt="">
+                    <img src="images/github.svg" alt="">
+                </div>
+
+                <h2>Projects</h2>
+
+                <div class="project-container">
+                    <div class="project-box">
+                        <div class="project-img">
+                            <img src="images\Movies.jpg" alt="Img">
+                        </div>
+                        <div class="project-title">
+                            <h3>Movie Finder Website</h3>
+                        </div>
+                        <div class="project-desc">
+                            <p>A Website Where You Can Search Your Favourite Movie Details Easily.
+                                Build By Using ReactJS for Front End And An API for Getting Data.
+                            </p>
+                        </div>
+                        <div class="call-to-action"><a href="https://deepakrajput.netlify.app/">View</a></div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-img">
+                            <img src="images\piano.jpg" alt="Img">
+                        </div>
+                        <div class="project-title">
+                            <h3>Piano</h3>
+                        </div>
+                        <div class="project-desc">
+                            <p>A Beautiful Piano Which Play Diffrent Tone.</p>
+                            <p>Build By Using HTML,CSS,Javascript</p>
+                        </div>
+                        <div class="call-to-action"><a href="https://pianoydeepak.netlify.app/">View</a></div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-img">
+                            <img src="images\Mobile App Development.jpg" alt="Img">
+                        </div>
+                        <div class="project-title">
+                            <h3>Chatting App</h3>
+                        </div>
+                        <div class="project-desc">
+                            <p>In this Chatting Application You can Chat with our Friend And Make A Voice Call Over
+                                Internet. </p>
+                        </div>
+                        <div class="call-to-action"><a href="https://github.com/Deepak9009/mg_app">View</a></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <form action="" method="POST">
+            <div class="contactMe" id="contactme">
+                <h2>Contact Me</h2>
+                <h3 class="field">Enter Your Name</h3>
+                <input type="text" class="inp" placeholder=" Your Name" name="Name">
+                <span id="error" class="error">*
+                    <!-- <?php echo "<br> $nameErr "; ?> -->
+                </span>
+                <!-- <script>
+                    function validateForm() {
+                            let x = document.forms["myForm"]["Name"].value;
+                            if (x == "") {
+                                 document.write("Name must be filled out");
+                                return false;
+                                }
+                            }
+                 </script> -->
+                <h3 class="field">Enter Your Email</h3>
+                <input type="email" class="inp" placeholder="Your Email" name="Email">
+                <span class="error" id="error">*
+                    <!-- <?php echo "<br> $emailErr "; ?> -->
+                </span>
+                <h3 class="field">Enter Your Contact Number</h3>
+                <input type="number" class="inp" Id="contactno" placeholder="Contact number" name="contactno" size="10">
+                <span class="error" id="error">*
+                    <!-- <?php echo "<br> $contactnoErr "; ?> -->
+                </span>
+                <h3 class="field">Gender </h3>
+                <div class="radio">
+                    <input type="radio" name="gender" id="gen"><label class="lbl">Male</label>
+                    <input type="radio" name="gender" id="gen"><label class="lbl"> Female</label>
+                    <input type="radio" name="gender" id="gen"><label class="lbl">Not Know</label>
+                </div>
+                <span class="error" id="error">
+                    <!-- <?php echo "<br> $genderErr "; ?> -->
+                </span>
+                <h3 class="cmmnt">Comment</h3>
+                <input type="text" name="comment" id="">
+                <span class="error" id="error">*
+                    <!-- <?php echo "<br> $commentErr "; ?> -->
+                </span>
+
+                <p>Agree & continue<input type="checkbox" class="check" name="Checkbox"></p>
+
+                <input type="submit" name="" value="Submit" class="submit">
+            </div>
+        </form>
+
+    </div>
+    <div class="footer" style="background: rgba(255, 165, 0);" id="footer">
+
+        <h1>About Me</h1>
+        <p>
+            I am a Final Year Student Of Bachelor Of Technology in Computer Science From GLA Univeristy Mathura.<br>
+            <span><i class="fas fa-phone"></i> &nbsp;+91 9837368791</span>
+            <span><i class="fas fa-envelope"></i> &nbsp; draj8469@gmail.com</span>
+        </p>
+
+
+    </div>
+    <!-- <div class="aboutme" id="aboutme">
+           <p></p> 
+        </div> -->
+
+</body>
+
+</html>
